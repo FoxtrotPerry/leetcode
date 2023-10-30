@@ -15,12 +15,12 @@ class Solution:
                 # if not, increment the forward pointer without swapping vowels
                 forward_index += 1
             elif s[reverse_index].lower() not in vowels:
-                # same thing for the reverse pointer but we decrement the reverse
-                # pointer
+                # same thing for the reverse pointer but we decrement the
+                # reverse pointer
                 reverse_index -= 1
             else:
-                # if both pointers are at vowels, swap them and advance both pointers
-                # in their respective directions
+                # if both pointers are at vowels, swap them and advance both
+                # pointers in their respective directions
                 s[forward_index], s[reverse_index] = s[reverse_index], s[forward_index]
                 forward_index += 1
                 reverse_index -= 1

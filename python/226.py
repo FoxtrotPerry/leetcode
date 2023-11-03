@@ -19,6 +19,5 @@ class Solution:
                 if root.right is not None:
                     invert(root.right)
 
-        print(root)
         invert(root)
         return root
